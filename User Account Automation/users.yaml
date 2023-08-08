@@ -1,0 +1,61 @@
+---
+  
+- name: Create users on switches
+  hosts: switches
+  gather_facts: false
+  vars:
+    ansible_python_interpreter: auto_silent
+  tasks:
+    - name: Create admin account on switches
+      exos_config:
+       commands:
+         - create account admin Local-Admin XXXXXX
+   
+- name: Create users on windows desktops
+  hosts: windows
+  gather_facts: false
+  vars:
+    user_accounts:
+      - name: DesktopUser1
+        host_index: 0
+      - name: DesktopUser2
+        host_index: 1
+      - name: DesktopUser3
+        host_index: 2
+      - name: DesktopUser4
+        host_index: 3
+  tasks:
+    - name: Create user accounts on Windows Desktops
+      win_user:
+        name: "{{ item.name }}"
+        password: "XXXXXX"
+        groups: Administrators
+      loop: "{{ user_accounts }}"
+      when: inventory_hostname == groups['windows'][item.host_index]
+
+- name: Create users on test box 1 ACCT_Network
+  hosts: ACCT_Network
+  gather_facts: false
+  become: true
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+    - name: Create TestUser1
+      user:
+        name: "TestUser1"
+        password: "{{ 'XXXXXX' | password_hash('sha512', 'XXXXXX') }}"
+        groups: sudo
+
+- name: Create users on test box 2 MGMT_Network
+  hosts: MGMT_Network
+  gather_facts: false
+  become: true
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+    - name: Create TestUser2   
+      user:
+        name: "TestUser2"
+        password: "{{ 'XXXXXX' | password_hash('sha512', 'XXXXXX') }}"
+        groups: sudo
+  
