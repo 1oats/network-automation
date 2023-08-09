@@ -18,11 +18,11 @@ IT_Network
 C.  Verify the VLAN infrastructure is configured properly by documenting the successful execution of your script.
 <br>  
 The results of `python3 id_vlan.py`  
-<img src="VLAN Deployment Automation/screenshots/python3id_vlan.png" alt="id_vlan" width="600">
+<img src="screenshots/python3id_vlan.png" alt="id_vlan" width="600">
 <br>  
 The results of `python3 config_vlan.py`  
-<img src="VLAN Deployment Automation/screenshots/python3config_vlan.png" alt="config_vlan" width="600">
-<img src="VLAN Deployment Automation/screenshots/python3config_vlan2.png" alt="config_vlan2" width="600">  
+<img src="screenshots/python3config_vlan.png" alt="config_vlan" width="600">
+<img src="screenshots/python3config_vlan2.png" alt="config_vlan2" width="600">  
 <br>
 D.  Integrate code within a private Git repository for continuous integration and deployment of the script.  
 - See this directory.  
