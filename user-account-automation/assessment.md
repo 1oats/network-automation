@@ -1,5 +1,11 @@
 # Part II: User Account Automation 
 
+<br>
+<div align="center">
+  <img src="../access-closet-gns3.png" alt="gns3 closet" width="600">
+</div>
+<br><br>
+
 F. Create an inventory file that includes the configuration settings for each switch, Windows desktop, and test box that is in Access Closet 1 in the N-CoreA-01 (10.10.1.1) network. Provide a copy of your inventory file.  
 - [View inv.ini](inv.ini)
      
