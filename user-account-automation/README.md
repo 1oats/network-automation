@@ -12,8 +12,11 @@ H. Describe the process you used to complete the automation of user accounts and
 - the outputs
 - the inventory
 - the validation, testing, and troubleshooting steps completed throughout the process
-<br><br><br>  
-
+<br><br>
 
  
 See [completed assessment](assessment.md)
+<br><br><br>
+<div align="center">
+  <img src="../access-closet-gns3.png" alt="gns3 closet" width="600">
+</div>
