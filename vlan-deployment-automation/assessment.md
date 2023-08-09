@@ -1,4 +1,9 @@
 # Part I: VLAN Deployment Automation Solution
+<br>
+<div align="center">
+  <img src="../access-closet-gns3.png" alt="gns3 closet" width="600">
+</div>
+<br>
 
 ### Configure the VLAN infrastructure and set up continuous integration by doing the following:
 
