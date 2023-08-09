@@ -20,3 +20,7 @@ E.  Describe the process you used to complete your VLAN deployment, including e
 - the validation, testing, and troubleshooting steps completed throughout the process
 
 
+<br><br>
+<div align="center">
+  <img src="../access-closet-gns3.png" alt="gns3 closet" width="600">
+</div>
