@@ -11,8 +11,8 @@ G. Use Ansible to automate the creation of local user accounts on each of the fo
   [View playbook users.yaml](users.yaml)
 
 The results of running `ansible-playbook -i inv.ini users.yaml`  
-  <img src="User Account Automation/screenshots/playbookusers.png" alt="id_vlan" width="600">
-  <img src="User Account Automation/screenshots/playbookusers2.png" alt="id_vlan" width="600">
+  <img src="screenshots/playbookusers.png" alt="id_vlan" width="600">
+  <img src="screenshots/playbookusers2.png" alt="id_vlan" width="600">
 
 H. Describe the process you used to complete the automation of user accounts and include each of the following in your description:
 - a list of the industry-standard tools used
