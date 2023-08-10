@@ -1,5 +1,9 @@
 # Network Scenario
 
+Summary: In this project, I use python to create VLANs across the four access layer switches in Access Closet 1. I then use ansible to automate the creation of user accounts on all device types in the diagram.
+
+---
+
 - SunMSP is a third-party IT installation vendor that partners with and supports networking infrastructures for school districts. SunMSP recently won one of the largest bids in the company’s history to upgrade and maintain the networking equipment for the School District. In past deployments, SunMSP often missed promised delivery dates due to last-minute changes or patches that needed to be made to customers’ devices. The company needs to change its deployment process with the upcoming School District project. 
 
 - You are a new network engineer for SunMSP who was hired to help accelerate the deployment of networking devices into customer environments. The company’s current process to configure new networking switches and routers entails logging into each device manually. Since large-scale deployments could take over a year to roll out into an environment, any configuration changes would take multiple days to push out into the different buildings within the environment. 
